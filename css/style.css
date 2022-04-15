@@ -1,0 +1,280 @@
+/* IMPORT */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins500';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins600';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins700';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins500i';
+    src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #FF7979;
+  color: #fff;
+  padding-top: 121px;
+  padding-bottom: 20px;
+  background-image: url(../img/Group5.svg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.site-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-form__box1 {
+    max-width: 525px;
+
+}
+
+.site-form__box2 {
+    width: 540px;
+}
+
+.site-form__heading {
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-family: 'Poppins700';
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.520833px;
+}
+
+.site-form__desc {
+    margin: 0;
+    font-family: 'Poppins500';
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.site-form__box2-txt {
+    padding: 17px 10px;
+    background-color: #5E54A4;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 24px;
+}
+
+.site-form-box2-desc {
+    margin: 0;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 0.267857px;
+    line-height: 26px;
+}
+
+.site-form-box2-desc:first-child {
+    font-family: "Poppins700";
+}
+
+.site-form-box2-desc:last-child {
+    font-family: "Poppins";
+}
+
+.site-form__form {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.site-form__form-input {
+    border: 1px solid #5E54A4;
+    border-radius: 5px;
+    padding: 15px 10px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.site-form__form-input::placeholder {
+    font-family: 'Poppins600';
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3D3B48;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+.error-message {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-family: 'Poppins500i';
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+    color: #FF7979;
+    display: none;
+}
+.site-form__form-input:not(:focus):not(:placeholder-shown):invalid {
+    background-image: url(../img/Group11.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 420px;
+    margin-bottom: 0;
+}
+
+.site-form__form-input:not(:focus):not(:placeholder-shown):invalid + .error-message {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.site-form__form-button {
+    margin-bottom: 8px;
+    background: #38CC8B;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border-radius: 5px;
+    border: none;
+    padding: 15px 10px;
+    font-family: 'Poppins600';
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.site-form__form-box {
+    display: inline-block;
+    text-align: center;
+}
+
+.site-form__form-desc {
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 26px;
+}
+
+.site-form__form-desc:first-child {
+    font-family: 'Poppins500';
+    color: #BAB7D4;
+}
+
+.site-form__form-desc:last-child {
+    font-family: "Poppins700";
+    color: #FF7979;
+}
+
+@media only screen and (max-width: 1000px) {
+    .site-form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-form__box1 {
+        margin-bottom: 64px;
+    }
+
+    .site-form__box2 {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .site-form__box1, .site-form__box2 {
+        max-width: 370px;
+    }
+
+    .site-form__heading {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    .site-form__box1, .site-form__box2 {
+        max-width: 300px;
+    }
+
+    .site-form__heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 11px;
+    }
+
+    .site-form__form-desc {
+        line-height: 21px;
+    }
+}
+
+
+
